@@ -23,13 +23,22 @@ The inspiration for AgentLink came from a profound realization: **blockchain tec
 - **Cross-Platform Communication**: Use WhatsApp and SMS for secure blockchain interactions.
 - **Autonomous Agents**: Use AI-driven logic to automate transactions and manage wallets.
 - **Gaia Node Integration**: Leverages a Gaia node running an LLM optimized for tool calling, or connects to the public Gaia node.
+- **AVS Eigen Layer Integration**: Ensures enhanced security and validation of transactions through decentralized trust mechanisms.
 
 ## How It Works
 
 1. **User Interaction**: Users send instructions via SMS or WhatsApp.
 2. **Agent Processing**: AgentLink interprets the message using the Coinbase AgentKit integrated with a Gaia node LLM.
 3. **On-Chain Execution**: The AgentKit processes the request and executes transactions on Base Chain.
-4. **Feedback Loop**: Users receive real-time transaction updates.
+4. **AVS Validation**: The transaction is validated through AVS Eigen Layer, ensuring trust and security.
+5. **Feedback Loop**: Users receive real-time transaction updates.
+
+## AVS Eigen Layer Usage
+
+AgentLink utilizes AVS (Active Validation Services) through the Eigen Layer to enhance security and validation of transactions. The AVS framework provides:
+- **Decentralized Trust**: By leveraging AVS, AgentLink ensures that transactions are independently validated by a decentralized network, reducing reliance on a single entity.
+- **Scalability & Efficiency**: AVS optimizes transaction validation, ensuring quick and secure execution on Base Chain.
+- **Enhanced Security**: Transactions processed through AgentLink gain an additional layer of security by being validated via Eigen Layer's restaking mechanism, preventing fraudulent activities.
 
 ## Integration Details
 
@@ -37,27 +46,12 @@ The inspiration for AgentLink came from a profound realization: **blockchain tec
 - **Blockchain**: Base Chain
 - **Communication Channels**: WhatsApp, SMS
 - **LLM Provider**: Gaia Node (public endpoint)
+- **Validation**: AVS Eigen Layer for transaction security
 
 **API Endpoint**: [https://llamatool.us.gaianet.network/v1](https://llamatool.us.gaianet.network/v1)  
 **Model Name**: llama  
-**API Key**: gaia
-
-## Why AgentLink Fits the Bounties
-
-### Coinbase Developer Platform Bounty: Most Innovative Use of AgentKit
-
-- **Groundbreaking End-User Application**: AgentLink redefines blockchain accessibility through SMS and WhatsApp.
-- **Primary Driver for On-Chain Transactions**: Every function in AgentLink relies on AgentKit’s robust blockchain capabilities.
-- **Web2-Web3 Integration**: Combines familiar Web2 communication platforms with advanced Web3 functionalities.
-- **Agent Autonomy**: Executes autonomous transactions through smart agent protocols.
-
-### Base Integration Excellence Bounty
-
-- **Base Integration**: Directly integrated with Base Chain for seamless transaction execution.
-- **Scalability**: Designed for global reach through SMS and WhatsApp, ensuring broad adoption potential.
-- **User Value**: Empowers users in low-connectivity regions and simplifies blockchain access.
+**API Key**: gaia  
 
 ## Conclusion
 
-AgentLink reshapes blockchain accessibility by merging familiar communication tools with powerful on-chain capabilities. Its reliance on the Coinbase AgentKit and Base Chain ensures a secure, scalable, and innovative solution fit for broad adoption and impactful blockchain engagement.
-
+AgentLink reshapes blockchain accessibility by merging familiar communication tools with powerful on-chain capabilities. With the integration of Coinbase AgentKit, Base Chain, and AVS Eigen Layer, it ensures a secure, scalable, and innovative solution fit for broad adoption and impactful blockchain engagement.

@@ -50,11 +50,10 @@ async function initializeAgent() {
   try {
     const llm = new ChatOpenAI({
       apiKey: "gaia",
-      model: "llama",
-      configuration: {
-        baseURL: "https://llamatool.us.gaianet.network/v1",
+      model: "llam70b",
+      configuration:{
+        baseURL: "https://llama70b.gaia.domains/v1",
       },
-    });
 
     let walletDataStr: string | null = null;
     if (fs.existsSync(WALLET_DATA_FILE)) {
